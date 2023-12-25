@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Collection from "@/components/shared/Collection";
 
 export default function Home() {
   return (
@@ -40,6 +41,8 @@ export default function Home() {
         <div className="flex w-full flex-col gap-5 md:flex-row">
           Search CategoryFilter
         </div>
+
+        <Collection />
       </section>
     </>
   );
