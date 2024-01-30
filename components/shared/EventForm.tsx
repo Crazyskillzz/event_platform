@@ -125,7 +125,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                   <Input
                     placeholder="Event title"
                     {...field}
-                    className="input-field"
+                    className="input-field w-72"
                   />
                 </FormControl>
                 <FormMessage />
@@ -155,7 +155,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
             name="description"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormControl className="h-72">
+                <FormControl className="h-72 w-72">
                   <Textarea
                     placeholder="Description"
                     {...field}
@@ -312,11 +312,12 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                               >
                                 Free Ticket
                               </label>
+
                               <Checkbox
                                 onCheckedChange={field.onChange}
                                 checked={field.value}
                                 id="isFree"
-                                className="mr-2 h-5 w-5 border-2 border-primary-500"
+                                className="mr-2 h-5 w-5 border-2 border-primary-500 flex items-center justify-center"
                               />
                             </div>
                           </FormControl>
